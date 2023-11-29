@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Libros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Bienvenidos a la tienda de libros</h1>
+
+    <div id="container">
+        <div class="book" data-id="1" data-name="Libro 1" data-price="20.000">
+            <img src="img/producto1.jpg" alt="Libro 1">
+            <div class="book-info">
+                <h3>El Libro de la Verdad</h3>
+                <p>Precio: $20.000</p>
+            </div>
+            <div class="counter">
+                <button class="count-btn" onclick="decremento(1)">-</button>
+                <span id="count1">0</span>
+                <button class="count-btn" onclick="incremento(1)">+</button>
+            </div>
+        </div>
+
+        <!-- Libro 2 -->
+        <div class="book" data-id="2" data-name="Libro 2" data-price="15.000">
+            <img src="img/producto2.jpg" alt="Libro 2">
+            <div class="book-info">
+                <h3>Verdad care santos</h3>
+                <p>Precio: $15.000</p>
+            </div>
+            <div class="counter">
+                <button class="count-btn" onclick="decremento(2)">-</button>
+                <span id="count2">0</span>
+                <button class="count-btn" onclick="incremento(2)">+</button>
+            </div>
+        </div>
+
+        <!-- Libro 3 -->
+        <div class="book" data-id="3" data-name="Libro 3" data-price="25.000">
+            <img src="img/producto3.jpg" alt="Libro 3">
+            <div class="book-info">
+                <h3>El olvido que seremos</h3>
+                <p>Precio: $25.000</p>
+            </div>
+            <div class="counter">
+                <button class="count-btn" onclick="decremento(3)">-</button>
+                <span id="count3">0</span>
+                <button class="count-btn" onclick="incremento(3)">+</button>
+            </div>
+        </div>
+
+        <!-- Agrega más libros aquí con la misma estructura -->
+
+        <button onclick="mostrarCarrito()">Carrito de compra</button>
+        <div id="cart"></div>
+    </div>
+
+    <script src="js/libroCarrito.js"></script>
+</body>
+</html>
